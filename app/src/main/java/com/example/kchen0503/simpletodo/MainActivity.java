@@ -47,31 +47,6 @@ public class MainActivity extends AppCompatActivity {
         setupListViewListener();
     }
 
-    /**
-     void test(){
-
-     boolean cond = 5 < 6;
-     int x;
-     if (cond) {
-        x  = 5;
-     }
-     else{
-        if (cond){
-            x  = 7;
-        }
-        else{
-            x  = 6;
-        }
-     }
-
-     x = 5 < 4 ? 5 : 3 < 5 ?  7 : 6;
-     // if 5<4, x=5, else if 3<5, x=7, else x=6
-
-     x = 6 < 0 ? 4 : 5 < 0 ? 3 : 2;
-
-     }
-     **/
-
     public void onAddItem(View v) {
         EditText etNewItem = (EditText) findViewById(R.id.etNewItem);
         String itemText = etNewItem.getText().toString();
@@ -94,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // set up time listener for edit (Regular dlick)
+        // set up time listener for edit (Regular click)
         lvItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
